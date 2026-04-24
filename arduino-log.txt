@@ -1,0 +1,2325 @@
+{"status":"ready"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERR_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERHORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 2000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERNTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1000
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOEMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERFORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERIZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOZONTAL"}
+Executing HORIZONTAL with value: 1000
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERFORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HORRWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWEROWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 0
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERNTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWER_HOL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+{"ok":false,"error":"Unknown action or missing parameters: EMPOWERD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing HORIZONTAL with value: 1502
+{"ok":true,"action":"EMPOWER_HORIZONTAL"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
+Executing FORWARD with value: 1498
+{"ok":true,"action":"EMPOWER_FORWARD"}
