@@ -93,7 +93,8 @@ function Client({ ips }: { ips: string[] }) {
     pwm: 1000,
   });
 
-  // ── Torpedo target PWM (ayarlanabilir) ────────────────────────────────────
+  const bnoActiveRef = useRef(1)
+
   const torpidoTargetPwmRef = useRef<number>(TORPIDO_PWM_DEFAULT);
   const [torpidoTargetPwm, setTorpidoTargetPwm] = useState<number>(TORPIDO_PWM_DEFAULT);
 
@@ -116,7 +117,7 @@ function Client({ ips }: { ips: string[] }) {
     socketRef.current?.emit("nano-send", JSON.stringify({ port, pwm }));
   };
 
-  // ─── Klavye Dinleyiciler ───────────────────────────────────────────────────
+
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (["Space", " ", "ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"].includes(e.key)) {
@@ -133,12 +134,12 @@ function Client({ ips }: { ips: string[] }) {
           torpidoSlot.current = prevSlot;
           setActiveTorpidoSlot(prevSlot);
         } else if (e.key === "ArrowUp") {
-          // PWM artır
+
           const next = Math.min(torpidoTargetPwmRef.current + TORPIDO_PWM_STEP, TORPIDO_PWM_MAX);
           torpidoTargetPwmRef.current = next;
           setTorpidoTargetPwm(next);
         } else if (e.key === "ArrowDown") {
-          // PWM azalt
+
           const next = Math.max(torpidoTargetPwmRef.current - TORPIDO_PWM_STEP, TORPIDO_PWM_MIN);
           torpidoTargetPwmRef.current = next;
           setTorpidoTargetPwm(next);
@@ -196,7 +197,7 @@ function Client({ ips }: { ips: string[] }) {
     return { fwd, side, vert, yaw };
   };
 
-  // ─── Ana Döngü ────────────────────────────────────────────────────────────
+
   const readGamepad = () => {
     const now = Date.now();
     const gamepads = navigator.getGamepads();
@@ -265,6 +266,7 @@ function Client({ ips }: { ips: string[] }) {
       p7: s7,
       p8: s8,
       p9: s9,
+      bno: bnoActiveRef.current
     });
 
     if (currentPayloadStr !== lastPayloadRef.current || now - lastSentTime.current > 100) {
@@ -321,7 +323,7 @@ function Client({ ips }: { ips: string[] }) {
     rafRef.current = requestAnimationFrame(readGamepad);
   };
 
-  // ─── Soket ve Effect Bağlantıları ────────────────────────────────────────
+
   useEffect(() => {
     if (gimbalFire === 0) return;
     sendToNano(6, gimbalPwmRef.current);
@@ -330,6 +332,11 @@ function Client({ ips }: { ips: string[] }) {
   useEffect(() => {
     if (firePulse === 0) return;
     const { port, pwm } = torpidoFireRef.current;
+    console.log(port)
+    if(port == 3){
+      bnoActiveRef.current = bnoActiveRef.current == 1 ? 0 : 1
+      return
+    }
     sendToNano(port, pwm);
   }, [firePulse]);
 
@@ -352,11 +359,11 @@ function Client({ ips }: { ips: string[] }) {
     socketRef.current = s;
 
     s.on("connect", () => {
-      console.log("Connected to Arduino WS bridge");
+      console.log("Connected to Arduino WebSocket bridge");
     });
 
     s.on("arduino-data", (data: unknown) => {
-      console.log("arduino-data:", data);
+      console.log("Received data from Arduino:", data);
     });
 
     return () => {
@@ -364,7 +371,7 @@ function Client({ ips }: { ips: string[] }) {
     };
   }, []);
 
-  // PWM bar yüzdesi (1000–2000 arası)
+
   const pwmPercent = Math.round(
     ((torpidoTargetPwm - TORPIDO_PWM_MIN) / (TORPIDO_PWM_MAX - TORPIDO_PWM_MIN)) * 100
   );
@@ -460,7 +467,7 @@ function Client({ ips }: { ips: string[] }) {
 
       {/* ── Alt panel ────────────────────────────────────────────────────────── */}
       <div
-        onClick={() => console.log(navigator.getGamepads())}
+        onClick={() => console.log("Gamepads:", navigator.getGamepads())}
         className="border border-gray-300 rounded-2xl col-span-4 row-span-2 grid grid-cols-3 divide-x
         divide-gray-300 *:px-12 *:flex *:flex-col *:items-center *:justify-center *:transition-colors
         *:hover:bg-gray-300/30 *:cursor-pointer *:text-gray-400 *:hover:text-gray-700"
@@ -479,7 +486,7 @@ function Client({ ips }: { ips: string[] }) {
         </div>
       </div>
 
-      {/* ── Bağlantılar ──────────────────────────────────────────────────────── */}
+
       <div className="border border-gray-300 rounded-2xl col-span-2 row-span-2">
         <div className="relative z-10 h-full flex flex-col">
           <p className="text-4xl text-right">Bağlantılar</p>
@@ -497,7 +504,7 @@ function Client({ ips }: { ips: string[] }) {
   );
 }
 
-// ── KeyCap bileşeni ─────────────────────────────────────────────────────────
+
 function KeyCap({
   label,
   action,
