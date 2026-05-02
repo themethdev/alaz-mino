@@ -4,136 +4,57 @@ import { Server } from "socket.io";
 import http from "http";
 import fs from "fs";
 import path from "path";
-import type { ArduinoMessage } from "../types/global";
 
-const ports = await SerialPort.list();
-
-const arduino = ports.find(
-  (p) =>
-    p.vendorId === "2341" ||
-    p.vendorId === "2a03" ||
-    p.manufacturer?.toLowerCase().includes("arduino"),
-);
-
-if (!arduino?.path) {
-  console.error("Arduino bulunamadı");
-  process.exit(1);
+interface ArduinoMessage {
+  createdAt: Date;
+  message: string;
+  source: "arduino" | "nano";
+  portPath: string;
 }
 
-const serial = new SerialPort({
-  path: arduino.path,
-  baudRate: 115200,
-  highWatermark: 64,
-});
+const ports = await SerialPort.list();
+const arduino = ports.find(p => ["2341", "2a03"].includes(p.vendorId!) || p.manufacturer?.toLowerCase().includes("arduino"));
+const nano = ports.find(p => p.vendorId === "0403");
 
-const parser = serial.pipe(new ReadlineParser({ delimiter: "\n" }));
+const logFile = path.join(process.cwd(), "serial-log.txt");
+fs.writeFileSync(logFile, "", { flag: "w" });
 
-const httpServer = http.createServer();
-const io = new Server(httpServer, {
-  cors: { origin: "*" },
-});
+const arduinoSerial = arduino ? new SerialPort({ path: arduino.path, baudRate: 115200 }) : null;
+const nanoSerial = nano ? new SerialPort({ path: nano.path, baudRate: 9600 }) : null;
 
-const arduinoMessages: ArduinoMessage[] = [];
+arduino ? console.log(`Arduino: ${arduino.path}`) : console.warn("Arduino: NULL");
+nano ? console.log(`Nano: ${nano.path}`) : console.warn("Nano: NULL");
 
-const logFilePath = path.join(process.cwd(), "arduino-log.txt");
-fs.writeFileSync(logFilePath, "", { flag: "w" });
+const arduinoParser = arduinoSerial?.pipe(new ReadlineParser({ delimiter: "\n" }));
+const nanoParser = nanoSerial?.pipe(new ReadlineParser({ delimiter: "\n" }));
 
-let arduinoReady = false;
+const io = new Server(http.createServer().listen(8082, () => console.log("Port: 8082")), { cors: { origin: "*" } });
+const allMessages: ArduinoMessage[] = [];
 
-const lastSendTimes: Record<string, number> = {};
-const MIN_SEND_INTERVAL = 5;
+function handleData(data: string, source: "arduino" | "nano", path: string) {
+  const msg: ArduinoMessage = { createdAt: new Date(), message: data.trim(), source, portPath: path };
+  console.log(`[${source.toUpperCase()}] > ${data.trim()}`);
+  allMessages.push(msg);
+  fs.appendFileSync(logFile, `[${source.toUpperCase()}] ${data}\n`);
+  io.emit("serial-data", msg);
+}
+
+arduinoParser?.on("data", (line) => handleData(line, "arduino", arduino!.path));
+nanoParser?.on("data", (line) => handleData(line, "nano", nano!.path));
 
 io.on("connection", (socket) => {
-  console.log("✓ Client connected");
-
-  arduinoMessages.forEach((msg) => {
-    socket.emit("arduino-data", msg);
-  });
-
-  const onData = (data: any) => {
-    const line = data.toString().trim();
-
-    if (line.includes('"status":"ready"')) {
-      arduinoReady = true;
-      console.log("arduino tamam");
-    }
-
-    console.log("← Arduino:", line);
-
-    const processedData: ArduinoMessage = {
-      createdAt: new Date(),
-      message: line,
-      arduino: arduino,
-    };
-
-    arduinoMessages.push(processedData);
-    fs.appendFileSync(logFilePath, line + "\n");
-
-    io.emit("arduino-data", processedData);
-  };
-
-  parser.on("data", onData);
+  console.log("Conn: +");
+  allMessages.forEach((msg) => socket.emit("serial-data", msg));
 
   socket.on("arduino-send", (msg: string) => {
-    if (!arduinoReady) {
-      socket.emit("arduino-error", {
-        error: "arduino baglanti hata",
-      });
-      return;
-    }
-
-    let action = "unknown";
-    let port = "";
-    try {
-      const parsed = JSON.parse(msg);
-      action = parsed.action || "unknown";
-      if (parsed.port) port = `_${parsed.port}`;
-    } catch (e) {
-  
-    }
-
-    const throttleKey = action + port;
-    const now = Date.now();
-    const lastTime = lastSendTimes[throttleKey] || 0;
-
-    if (now - lastTime < MIN_SEND_INTERVAL) {
-      console.log(`Throttled: ${throttleKey}`);
-      return;
-    }
-
-    lastSendTimes[throttleKey] = now;
-
-    serial.write(msg + "\n", (err) => {
-      if (err) {
-        console.error("err:", err);
-        socket.emit("arduino-error", {
-          error: "err",
-        });
-      } else {
-        console.log(`→ Arduino [${action}]:`, msg);
-      }
-    });
+    if (!arduinoSerial?.writable) return;
+    arduinoSerial.write(msg + "\n", (err) => err && console.error("A-Write Err:", err.message));
   });
 
-  socket.on("disconnect", () => {
-    console.log("client gg");
-    parser.removeListener("data", onData);
+  socket.on("nano-send", (msg: string) => {
+    if (!nanoSerial?.writable) return;
+    nanoSerial.write(msg + "\n", (err) => err && console.error("N-Write Err:", err.message));
   });
-});
 
-serial.on("open", () => {
-  console.log("baglandi", arduino.path);
-});
-
-serial.on("error", (err) => {
-  console.error("err arduino:", err.message);
-});
-
-process.on("SIGINT", () => {
-  serial.close(() => {
-    process.exit(0);
-  });
-});
-
-httpServer.listen(8082, () => {
+  socket.on("disconnect", () => console.log("Conn: -"));
 });

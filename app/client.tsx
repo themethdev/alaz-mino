@@ -1,539 +1,505 @@
 "use client";
 
-import {
-  BatteryCharging,
-  Globe,
-  LaptopMinimal,
-  Logs,
-  Monitor,
-  ShieldCheck,
-} from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
-import { Socket } from "socket.io";
 import io from "socket.io-client";
-import { ImRocket } from "react-icons/im";
+import { Socket } from "socket.io";
 import { cn } from "@heroui/theme";
-import Image from "next/image";
+import { ImRocket } from "react-icons/im";
+import { MdLightbulb, MdOutlineCameraswitch } from "react-icons/md";
+import { Gamepad2 } from "lucide-react";
+import Pointer from "@/components/Pointer";
+import { PiHandGrabbingFill } from "react-icons/pi";
 
-const socket = io({
-  path: "/socket.io",
-});
+const msock = io({ path: "/socket.io" });
 
-function mapToPWM(value: number) {
-  return Math.round(1500 + value * 500);
-}
+const toPWM = (v: number) => Math.round(1500 + v * 500);
+const inv = (v: number) => 3000 - v;
+const clamp = (v: number) => Math.max(-1, Math.min(1, v));
 
-function invert(value: number) {
-  return 3000 - value;
-}
+const BASE = 3;
+const TN = 9;
+const TMIN = 1100;
+const TMAX = 2000;
+const TSTEP = 50;
+const TDEF = 1600;
+const KBV = 0.8;
 
-const SIDE_MOTOR_CONFIG = {
-  m6: { dir: -1, offset: 0 },
-  m7: { dir: 1, offset: 0 },
-  m8: { dir: 1, offset: 0 },
-  m9: { dir: 1, offset: 0 },
+const KMAP: Record<string, true> = {
+  w: true,
+  s: true,
+  a: true,
+  d: true,
+  q: true,
+  e: true,
+  z: true,
+  x: true,
 };
 
-const BASE_PIN = 3;
-const TOTAL_TORPIDO = 9;
-const TORPIDO_PWM_MIN = 1100;
-const TORPIDO_PWM_MAX = 2000;
-const TORPIDO_PWM_STEP = 50;
-const TORPIDO_PWM_DEFAULT = 1600;
-
-const KB_AXIS = 0.8;
-
-const KEY_MAP: Record<string, string> = {
-  w: "fwd+",
-  s: "fwd-",
-  a: "side-",
-  d: "side+",
-  q: "vert-",
-  e: "vert+",
-  z: "yaw-",
-  x: "yaw+",
-};
-
-const KEY_LABELS = [
-  { key: "q", label: "Q", action: "Aşağı",  col: 1, row: 1 },
-  { key: "w", label: "W", action: "İleri",  col: 2, row: 1 },
-  { key: "e", label: "E", action: "Yukarı", col: 3, row: 1 },
-  { key: "a", label: "A", action: "Sol",    col: 1, row: 2 },
-  { key: "s", label: "S", action: "Geri",   col: 2, row: 2 },
-  { key: "d", label: "D", action: "Sağ",    col: 3, row: 2 },
-  { key: "z", label: "Z", action: "Sola Dön", col: 1, row: 3 },
-  { key: "x", label: "X", action: "Sağa Dön", col: 2, row: 3 },
+const KL = [
+  { k: "q", lb: "Q", ac: "Aşağı", r: 1, c: 1 },
+  { k: "w", lb: "W", ac: "İleri", r: 1, c: 2 },
+  { k: "e", lb: "E", ac: "Yukarı", r: 1, c: 3 },
+  { k: "a", lb: "A", ac: "Sol", r: 2, c: 1 },
+  { k: "s", lb: "S", ac: "Geri", r: 2, c: 2 },
+  { k: "d", lb: "D", ac: "Sağ", r: 2, c: 3 },
+  { k: "z", lb: "Z", ac: "⟲", r: 3, c: 1 },
+  { k: "x", lb: "X", ac: "⟳", r: 3, c: 2 },
 ];
 
 function Client({ ips }: { ips: string[] }) {
-  const [count, setCount] = useState(0);
-  const [gimbalFire, setGimbalFire] = useState(0);
-  const [pwmValues, setPwmValues] = useState({
-    horizontalForwardPWM: 1500,
-    horizontalHorizontalPWM: 1500,
-    verticalForwardPWM: 1500,
-  });
-
-  const keysHeld = useRef<Set<string>>(new Set());
-  const [activeKeys, setActiveKeys] = useState<Set<string>>(new Set());
-  const socketRef = useRef<Socket | null>(null);
-  const rafRef = useRef<number | null>(null);
-
-  const lastSentTime = useRef(0);
-  const lastPayloadRef = useRef<string>("");
-
-  const lastSent = useRef({
-    leftArm: 1000,
-    rightArm: 1000,
-  });
-
-  const torpidoFireRef = useRef<{ port: number; pwm: number }>({
-    port: BASE_PIN,
-    pwm: 1000,
-  });
-
-  const bnoActiveRef = useRef(1)
-
-  const torpidoTargetPwmRef = useRef<number>(TORPIDO_PWM_DEFAULT);
-  const [torpidoTargetPwm, setTorpidoTargetPwm] = useState<number>(TORPIDO_PWM_DEFAULT);
-
-  const gimbalPwmRef = useRef(1500);
-  const torpidoSlot = useRef(1);
-  const [activeTorpidoSlot, setActiveTorpidoSlot] = useState(1);
+  const [users, setUsers] = useState(0);
+  const [activeKeys, setActiveKeys] = useState(new Set<string>());
+  const [trpSlot, setTrpSlot] = useState(1);
+  const [trpPwm, setTrpPwm] = useState(TDEF);
   const [firePulse, setFirePulse] = useState(0);
+  const [gimbalFire, setGimbalFire] = useState(0);
+  const [spd, setSpd] = useState(0);
+  const [lightOn, setLightOn] = useState(false);
+  const [gimbalPwm, setGimbalPwm] = useState(1500);
+  const [armOpen, setArmOpen] = useState(false);
+  const [gpHint, setGpHint] = useState<string | null>(null);
 
-  const prevButtons = useRef({
-    fireBtnPressed: false,
-    slotBtnPressed: false,
-    gimbalBtnPressed: false,
+  const held = useRef(new Set<string>());
+  const sockRef = useRef<Socket | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const lastPld = useRef("");
+  const lastT = useRef(0);
+  const bnoRef = useRef(1);
+  const slotRef = useRef(1);
+  const tpwmRef = useRef(TDEF);
+  const fireRef = useRef({ port: BASE, pwm: 1000 });
+  const gimRef = useRef(1500);
+  const lightRef = useRef(false);
+  const armRef = useRef(false);
+  const prevBtn = useRef({
+    fire: false,
+    slot: false,
+    gim: false,
+    light: false,
+    arm: false,
   });
+  const gpTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const sendToArduino = (payload: object) => {
-    socketRef.current?.emit("arduino-send", JSON.stringify(payload));
+  const sendA = (p: object) =>
+    sockRef.current?.emit("arduino-send", JSON.stringify(p));
+  const sendN = (port: number, pwm: number) =>
+    sockRef.current?.emit("nano-send", JSON.stringify({ port, pwm }));
+
+  const hint = (msg: string) => {
+    setGpHint(msg);
+    if (gpTimer.current) clearTimeout(gpTimer.current);
+    gpTimer.current = setTimeout(() => setGpHint(null), 1800);
   };
 
-  const sendToNano = (port: number, pwm: number) => {
-    socketRef.current?.emit("nano-send", JSON.stringify({ port, pwm }));
+  const kbAxes = () => {
+    const k = held.current;
+    return {
+      fwd: (k.has("w") ? -KBV : 0) + (k.has("s") ? KBV : 0),
+      side: (k.has("d") ? KBV : 0) + (k.has("a") ? -KBV : 0),
+      vert: (k.has("q") ? KBV : 0) + (k.has("e") ? -KBV : 0),
+      yaw: (k.has("z") ? -KBV : 0) + (k.has("x") ? KBV : 0),
+    };
   };
 
-
-  useEffect(() => {
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (["Space", " ", "ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"].includes(e.key)) {
-        e.preventDefault();
-      }
-
-      if (!e.repeat) {
-        if (e.key === "ArrowRight") {
-          const nextSlot = (torpidoSlot.current % TOTAL_TORPIDO) + 1;
-          torpidoSlot.current = nextSlot;
-          setActiveTorpidoSlot(nextSlot);
-        } else if (e.key === "ArrowLeft") {
-          const prevSlot = torpidoSlot.current === 1 ? TOTAL_TORPIDO : torpidoSlot.current - 1;
-          torpidoSlot.current = prevSlot;
-          setActiveTorpidoSlot(prevSlot);
-        } else if (e.key === "ArrowUp") {
-
-          const next = Math.min(torpidoTargetPwmRef.current + TORPIDO_PWM_STEP, TORPIDO_PWM_MAX);
-          torpidoTargetPwmRef.current = next;
-          setTorpidoTargetPwm(next);
-        } else if (e.key === "ArrowDown") {
-
-          const next = Math.max(torpidoTargetPwmRef.current - TORPIDO_PWM_STEP, TORPIDO_PWM_MIN);
-          torpidoTargetPwmRef.current = next;
-          setTorpidoTargetPwm(next);
-        } else if (e.key === " " || e.key === "Spacebar") {
-          const slot = torpidoSlot.current;
-          const pin = BASE_PIN + (slot - 1);
-          torpidoFireRef.current = {
-            port: pin,
-            pwm: torpidoFireRef.current.pwm === 1000 ? torpidoTargetPwmRef.current : 1000,
-          };
-          setFirePulse((p) => p + 1);
-        }
-      }
-
-      const key = e.key.toLowerCase();
-      if (KEY_MAP[key] && !keysHeld.current.has(key)) {
-        keysHeld.current.add(key);
-        setActiveKeys(new Set(keysHeld.current));
-      }
-    };
-
-    const onKeyUp = (e: KeyboardEvent) => {
-      const key = e.key.toLowerCase();
-      if (KEY_MAP[key]) {
-        keysHeld.current.delete(key);
-        setActiveKeys(new Set(keysHeld.current));
-      }
-    };
-
-    window.addEventListener("keydown", onKeyDown, { passive: false });
-    window.addEventListener("keyup", onKeyUp);
-    
-    return () => {
-      window.removeEventListener("keydown", onKeyDown);
-      window.removeEventListener("keyup", onKeyUp);
-    };
-  }, []);
-
-  const getKeyboardAxes = () => {
-    const keys = keysHeld.current;
-    let fwd  = 0;
-    let side = 0;
-    let vert = 0;
-    let yaw = 0;
-    
-    if (keys.has("w")) fwd  -= KB_AXIS;
-    if (keys.has("s")) fwd  += KB_AXIS;
-    if (keys.has("d")) side += KB_AXIS;
-    if (keys.has("a")) side -= KB_AXIS;
-    if (keys.has("q")) vert += KB_AXIS;
-    if (keys.has("e")) vert -= KB_AXIS;
-    if (keys.has("z")) yaw -= KB_AXIS;
-    if (keys.has("x")) yaw += KB_AXIS;
-    
-    return { fwd, side, vert, yaw };
-  };
-
-
-  const readGamepad = () => {
+  const tick = () => {
     const now = Date.now();
-    const gamepads = navigator.getGamepads();
-    const hasKeyboardInput = keysHeld.current.size > 0;
-    
-    const gamepad = !hasKeyboardInput
-      ? gamepads.find((g) => g !== null) ?? null
-      : null;
+    const gps = navigator.getGamepads();
+    const gp =
+      held.current.size === 0 ? (gps.find((g) => g !== null) ?? null) : null;
+    const dz = 0.1;
+    const ax = kbAxes();
 
-    const deadzone = 0.1;
-    const kb = getKeyboardAxes();
+    let fwd = ax.fwd;
+    let side = ax.side;
+    let vert = ax.vert;
+    let yaw = ax.yaw;
 
-    let fwd  = kb.fwd;
-    let side = kb.side;
-    let vert = kb.vert;
-    let yaw = kb.yaw;
-
-    if (gamepad) {
-      const gFwd  = Math.abs(gamepad.axes[1]) > deadzone ? -gamepad.axes[1] : 0;
-      const gSide = Math.abs(gamepad.axes[0]) > deadzone ?  gamepad.axes[0] : 0;
-      const gVert = Math.abs(gamepad.axes[3]) > deadzone ?  gamepad.axes[3] : 0;
-      fwd  = fwd  || gFwd;
-      side = side || gSide;
-      vert = vert || gVert;
+    if (gp) {
+      fwd = fwd || (Math.abs(gp.axes[1]) > dz ? -gp.axes[1] : 0);
+      side = side || (Math.abs(gp.axes[0]) > dz ? gp.axes[0] : 0);
+      vert = vert || (Math.abs(gp.axes[3]) > dz ? gp.axes[3] : 0);
     }
 
-    const limit = (val: number) => Math.max(-1, Math.min(1, val));
+    const vPWM = inv(toPWM(vert));
+    let s6 = toPWM(clamp((fwd + side) * -1));
+    let s7 = toPWM(clamp((fwd - side) * 1));
+    let s8 = toPWM(clamp((fwd + side) * 1));
+    let s9 = toPWM(clamp((fwd - side) * 1));
 
-    const horizontalForwardPWM = invert(mapToPWM(vert));
- 
-    let s6 = mapToPWM(limit((fwd + side) * SIDE_MOTOR_CONFIG.m6.dir));
-    let s7 = mapToPWM(limit((fwd - side) * SIDE_MOTOR_CONFIG.m7.dir));
-    let s8 = mapToPWM(limit((fwd + side) * SIDE_MOTOR_CONFIG.m8.dir));
-    let s9 = mapToPWM(limit((fwd - side) * SIDE_MOTOR_CONFIG.m9.dir));
-
-    if (gamepad) {
-      const yawInput = Math.abs(gamepad.axes[2]) > deadzone ? gamepad.axes[2] : 0;
-      const yawPWM = mapToPWM(limit(yawInput));
-      if (yawPWM > 1520 || yawPWM < 1480) {
-        s6 = invert(yawPWM);
-        s7 = yawPWM;
-        s8 = invert(yawPWM);
-        s9 = invert(yawPWM);
-      }
-    } else {
-      if (Math.abs(yaw) > 0.1) {
-        const yawPWM = mapToPWM(limit(yaw));
-        s6 = invert(yawPWM);
-        s7 = yawPWM;
-        s8 = invert(yawPWM);
-        s9 = invert(yawPWM);
-      }
+    const yawI = gp ? (Math.abs(gp.axes[2]) > dz ? gp.axes[2] : 0) : yaw;
+    if (Math.abs(yawI) > 0.1) {
+      const yPWM = toPWM(clamp(yawI));
+      s6 = inv(yPWM);
+      s7 = yPWM;
+      s8 = inv(yPWM);
+      s9 = inv(yPWM);
     }
 
     if (fwd > 0.4) {
-      s6 = invert(s6);
-      s7 = invert(s7);
-      s8 = invert(s8);
-      s9 = invert(s9);
+      s6 = inv(s6);
+      s7 = inv(s7);
+      s8 = inv(s8);
+      s9 = inv(s9);
     }
+        const dev =
+      [s6, s7, s8, s9, vPWM].reduce((a, v) => a + Math.abs(v - 1500), 0) / 5;
+    setSpd(Math.round((dev / 500) * 100));
 
-    const currentPayloadStr = JSON.stringify({
-      forward: horizontalForwardPWM,
+    const pld = JSON.stringify({
+      forward: vPWM,
       action: "COMBINED",
       p6: s6,
       p7: s7,
       p8: s8,
       p9: s9,
-      bno: bnoActiveRef.current
+      bno: bnoRef.current,
     });
 
-    if (currentPayloadStr !== lastPayloadRef.current || now - lastSentTime.current > 100) {
-      socketRef.current?.emit("arduino-send", currentPayloadStr);
-      lastPayloadRef.current = currentPayloadStr;
-      lastSentTime.current = now;
-
-      setPwmValues({
-        horizontalForwardPWM,
-        horizontalHorizontalPWM: s6,
-        verticalForwardPWM: s7,
-      });
+    if (pld !== lastPld.current || now - lastT.current > 100) {
+      sockRef.current?.emit("arduino-send", pld);
+      lastPld.current = pld;
+      lastT.current = now;
     }
 
-    if (gamepad) {
-      if (gamepad.buttons[5]?.value === 1 && lastSent.current.rightArm > 600)
-        lastSent.current.rightArm -= 200;
-      if (gamepad.buttons[7]?.value === 1 && lastSent.current.rightArm < 1800)
-        lastSent.current.rightArm += 200;
-      if (gamepad.buttons[4]?.value === 1 && lastSent.current.leftArm > 600)
-        lastSent.current.leftArm -= 200;
-      if (gamepad.buttons[6]?.value === 1 && lastSent.current.leftArm < 1800)
-        lastSent.current.leftArm += 200;
-
-      const slotBtnPressed = gamepad.buttons[0]?.value === 1;
-      if (slotBtnPressed && !prevButtons.current.slotBtnPressed) {
-        const nextSlot = (torpidoSlot.current % TOTAL_TORPIDO) + 1;
-        torpidoSlot.current = nextSlot;
-        setActiveTorpidoSlot(nextSlot);
+    if (gp) {
+      const slotB = gp.buttons[0]?.value === 1;
+      if (slotB && !prevBtn.current.slot) {
+        const next = (slotRef.current % TN) + 1;
+        slotRef.current = next;
+        setTrpSlot(next);
+        hint(`Slot ${next}`);
       }
-      prevButtons.current.slotBtnPressed = slotBtnPressed;
+      prevBtn.current.slot = slotB;
 
-      const fireBtnPressed = gamepad.buttons[1]?.value === 1;
-      if (fireBtnPressed && !prevButtons.current.fireBtnPressed) {
-        const slot = torpidoSlot.current;
-        const pin = BASE_PIN + (slot - 1);
-        torpidoFireRef.current = {
+      const fireB = gp.buttons[1]?.value === 1;
+      if (fireB && !prevBtn.current.fire) {
+        const pin = BASE + (slotRef.current - 1);
+        fireRef.current = {
           port: pin,
-          pwm: torpidoFireRef.current.pwm === 1000 ? torpidoTargetPwmRef.current : 1000,
+          pwm: fireRef.current.pwm === 1000 ? tpwmRef.current : 1000,
         };
         setFirePulse((p) => p + 1);
+        hint("🚀 Ateş");
       }
-      prevButtons.current.fireBtnPressed = fireBtnPressed;
+      prevBtn.current.fire = fireB;
 
-      const gimbalBtnPressed = gamepad.buttons[2]?.value === 1;
-      if (gimbalBtnPressed && !prevButtons.current.gimbalBtnPressed) {
-        if (gimbalPwmRef.current === 2000) gimbalPwmRef.current = 1000;
-        else gimbalPwmRef.current = gimbalPwmRef.current + 250;
+      const gimB = gp.buttons[2]?.value === 1;
+      if (gimB && !prevBtn.current.gim) {
+        gimRef.current = gimRef.current === 2000 ? 1000 : gimRef.current + 250;
+        setGimbalPwm(gimRef.current);
         setGimbalFire((p) => p + 1);
+        hint("📷 Gimbal");
       }
-      prevButtons.current.gimbalBtnPressed = gimbalBtnPressed;
+      prevBtn.current.gim = gimB;
+
+      const lightB = gp.buttons[3]?.value === 1;
+      if (lightB && !prevBtn.current.light) {
+        lightRef.current = !lightRef.current;
+        setLightOn(lightRef.current);
+        sendN(4, lightRef.current ? 2000 : 1000);
+        hint("💡 Işık");
+      }
+      prevBtn.current.light = lightB;
+
+      const armB = gp.buttons[4]?.value === 1 || gp.buttons[5]?.value === 1;
+      if (armB && !prevBtn.current.arm) {
+        armRef.current = !armRef.current;
+        setArmOpen(armRef.current);
+        sendN(9, armRef.current ? 2000 : 1000);
+        hint("🦾 Kol");
+      }
+      prevBtn.current.arm = armB;
     }
 
-    rafRef.current = requestAnimationFrame(readGamepad);
+    rafRef.current = requestAnimationFrame(tick);
   };
 
-
-  useEffect(() => {
-    if (gimbalFire === 0) return;
-    sendToNano(6, gimbalPwmRef.current);
-  }, [gimbalFire]); 
-  
   useEffect(() => {
     if (firePulse === 0) return;
-    const { port, pwm } = torpidoFireRef.current;
-    console.log(port)
-    if(port == 3){
-      bnoActiveRef.current = bnoActiveRef.current == 1 ? 0 : 1
-      return
+    const { port, pwm } = fireRef.current;
+    if (port === 3) {
+      bnoRef.current = bnoRef.current === 1 ? 0 : 1;
+      return;
     }
-    sendToNano(port, pwm);
+    sendN(port, pwm);
   }, [firePulse]);
 
   useEffect(() => {
-    socket.emit("join", "alaz");
-    socket.on("online", (data: number) => {
-      setCount(data);
-    });
+    if (gimbalFire === 0) return;
+    sendN(6, gimRef.current);
+  }, [gimbalFire]);
 
-    rafRef.current = requestAnimationFrame(readGamepad);
+  useEffect(() => {
+    tick()
+    const onDown = (e: KeyboardEvent) => {
+      if (
+        [" ", "ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"].includes(e.key)
+      )
+        e.preventDefault();
 
+      if (!e.repeat) {
+        if (e.key === "ArrowRight") {
+          const n = (slotRef.current % TN) + 1;
+          slotRef.current = n;
+          setTrpSlot(n);
+        } else if (e.key === "ArrowLeft") {
+          const n = slotRef.current === 1 ? TN : slotRef.current - 1;
+          slotRef.current = n;
+          setTrpSlot(n);
+        } else if (e.key === "ArrowUp") {
+          const n = Math.min(tpwmRef.current + TSTEP, TMAX);
+          tpwmRef.current = n;
+          setTrpPwm(n);
+        } else if (e.key === "ArrowDown") {
+          const n = Math.max(tpwmRef.current - TSTEP, TMIN);
+          tpwmRef.current = n;
+          setTrpPwm(n);
+        } else if (e.key === " ") {
+          const pin = BASE + (slotRef.current - 1);
+          fireRef.current = {
+            port: pin,
+            pwm: fireRef.current.pwm === 1000 ? tpwmRef.current : 1000,
+          };
+          setFirePulse((p) => p + 1);
+        } else if (e.key.toLowerCase() === "l") {
+          lightRef.current = !lightRef.current;
+          setLightOn(lightRef.current);
+          sendN(4, lightRef.current ? 2000 : 1000);
+        } else if (e.key === "[") {
+          const n = Math.max(gimRef.current - 250, 1000);
+          gimRef.current = n;
+          setGimbalPwm(n);
+          setGimbalFire((p) => p + 1);
+        } else if (e.key === "]") {
+          const n = Math.min(gimRef.current + 250, 2000);
+          gimRef.current = n;
+          setGimbalPwm(n);
+          setGimbalFire((p) => p + 1);
+        } else if (e.key.toLowerCase() === "c") {
+          armRef.current = !armRef.current;
+          setArmOpen(armRef.current);
+          sendN(9, armRef.current ? 2000 : 1000);
+        }
+      }
+
+      const k = e.key.toLowerCase();
+      if (KMAP[k] && !held.current.has(k)) {
+        held.current.add(k);
+        setActiveKeys(new Set(held.current));
+      }
+    };
+
+    const onUp = (e: KeyboardEvent) => {
+      const k = e.key.toLowerCase();
+      if (KMAP[k]) {
+        held.current.delete(k);
+        setActiveKeys(new Set(held.current));
+      }
+    };
+
+    window.addEventListener("keydown", onDown, { passive: false });
+    window.addEventListener("keyup", onUp);
     return () => {
-      socket.emit("leave");
-      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("keydown", onDown);
+      window.removeEventListener("keyup", onUp);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);
 
   useEffect(() => {
     const s = io("http://localhost:8082") as unknown as Socket;
-    socketRef.current = s;
-
-    s.on("connect", () => {
-      console.log("Connected to Arduino WebSocket bridge");
-    });
-
-    s.on("arduino-data", (data: unknown) => {
-      console.log("Received data from Arduino:", data);
-    });
-
+    sockRef.current = s;
+    s.on("connect", () => console.log("Bridge OK"));
+    s.on("arduino-data", (d: unknown) => console.log("Arduino:", d));
     return () => {
       s.disconnect();
     };
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => setGimbalFire(0), 4000);
+  }, [gimbalFire]);
 
-  const pwmPercent = Math.round(
-    ((torpidoTargetPwm - TORPIDO_PWM_MIN) / (TORPIDO_PWM_MAX - TORPIDO_PWM_MIN)) * 100
-  );
+  const tpct = Math.round(((trpPwm - TMIN) / (TMAX - TMIN)) * 100);
 
   return (
-    <main className="grid grid-cols-6 grid-rows-5 gap-10 p-12 w-screen h-screen *:relative *:overflow-hidden *:transition-colors *:hover:bg-gray-100/30">
-      {/* ── Kamera ───────────────────────────────────────────────────────────── */}
-      <div className="border border-gray-300 rounded-2xl col-span-4 row-span-3">
-        <iframe src="http://192.168.10.2/cam1" className="w-full h-full" />
+    <div className="relative w-screen h-screen overflow-hidden bg-black select-none">
+      <iframe
+        src="http://192.168.10.2:8889/cam1"
+        className="absolute inset-0 w-full h-full border-none"
+      />
 
-        <div className="absolute right-5 bottom-5 flex flex-col items-end gap-2">
-          <div className="flex gap-3">
-            {Array.from({ length: TOTAL_TORPIDO }, (_, i) => i + 1).map((i) => (
-              <div
-                key={i}
-                className={cn(
-                  "size-6 transition-all duration-200",
-                  i === activeTorpidoSlot
-                    ? "text-rose-500 scale-125 drop-shadow-[0_0_8px_rgba(244,63,94,0.8)]"
-                    : "text-gray-300",
-                )}
-              >
-                <ImRocket className="w-full h-full" />
+      <Pointer />
+
+      <div className="absolute bottom-20 left-8 pointer-events-none">
+        {[1, 2, 3].map((row) => (
+          <div key={row} className="flex gap-1.5 mb-1.5 h-[60px]">
+            {KL.filter((kl) => kl.r === row).map(({ k, lb, ac }) => (
+              <div key={k} className="w-[60px] h-[60px] flex-shrink-0">
+                <AnimatePresence>
+                  {activeKeys.has(k) && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.4, y: 10 }}
+                      animate={{ opacity: 1, scale: 1, y: 0 }}
+                      exit={{ opacity: 0, scale: 0.4, y: 10 }}
+                      transition={{ duration: 0.09, ease: "backOut" }}
+                      className="w-[60px] h-[60px] rounded-2xl border-2 border-gray-300 bg-white
+                        flex flex-col items-center justify-center gap-0.5 shadow-2xl shadow-black/40"
+                    >
+                      <span className="text-lg font-black text-gray-900 leading-none">
+                        {lb}
+                      </span>
+                      <span className="text-[9px] font-medium text-gray-500 leading-none">
+                        {ac}
+                      </span>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             ))}
           </div>
+        ))}
+      </div>
 
-          {/* PWM Ayar Göstergesi */}
-          <div className="bg-black/60 backdrop-blur-sm border border-gray-600 rounded-xl px-4 py-2.5 flex flex-col items-end gap-1.5 min-w-[180px]">
-            <div className="flex items-center justify-between w-full gap-3">
-              <div className="flex items-center gap-1 text-gray-400 text-xs font-mono">
-                <span className="text-gray-500">↑↓</span>
-                <span>PWM</span>
-              </div>
-              <span
-                className={cn(
-                  "text-lg font-bold font-mono tabular-nums leading-none transition-colors",
-                  torpidoTargetPwm >= 1800
-                    ? "text-rose-400"
-                    : torpidoTargetPwm >= 1500
-                    ? "text-amber-400"
+      <div className="absolute right-5 top-1/2 -translate-y-1/2 flex flex-col gap-2.5 pointer-events-none">
+        <motion.div
+          animate={{
+            x: lightOn ? 0 : 200,
+            opacity: lightOn ? 1 : 0,
+            filter: lightOn ? "blur(0px)" : "blur(20px)",
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className={cn(
+            "w-20 h-20 rounded-2xl flex flex-col items-center justify-center bg-white border border-gray-300",
+          )}
+        >
+          <MdLightbulb className="size-9 text-amber-300" />
+        </motion.div>
+
+        <motion.div
+          animate={{
+            x: gimbalFire > 0 ? 0 : 200,
+            opacity: gimbalFire > 0 ? 1 : 0,
+            filter: gimbalFire > 0 ? "blur(0px)" : "blur(20px)",
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className={cn(
+            "w-20 h-20 rounded-2xl flex flex-col items-center justify-center bg-white border border-gray-300",
+          )}
+        >
+          <MdOutlineCameraswitch className="size-7 mb-1.5 text-gray-900" />
+          <span className="text-md mt-1 font-medium text-gray-900 leading-none">
+            {((gimRef.current / 1500) * 100).toFixed(2)}%
+          </span>
+        </motion.div>
+
+        <motion.div
+          animate={{
+            x: armOpen ? 0 : 200,
+            opacity: armOpen ? 1 : 0,
+            filter: armOpen ? "blur(0px)" : "blur(20px)",
+          }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className={cn(
+            "w-20 h-20 rounded-2xl flex flex-col items-center justify-center bg-white border border-gray-300",
+          )}
+        >
+          <PiHandGrabbingFill className="size-9 mb-1 text-gray-900" />
+        </motion.div>
+      </div>
+
+      <div className="absolute bottom-0 right-5 flex flex-col items-end gap-2 pointer-events-none">
+        <div className="flex gap-1.5">
+          {Array.from({ length: TN }, (_, i) => i + 1).map((i) => (
+            <div
+              key={i}
+              className={cn(
+                "size-4 transition-all duration-150",
+                i === trpSlot
+                  ? "text-rose-400 scale-125 drop-shadow-[0_0_6px_rgba(251,113,133,0.8)]"
+                  : "text-white 15",
+              )}
+            >
+              <ImRocket className="w-full h-full" />
+            </div>
+          ))}
+        </div
+        >
+        <div className="bg-black/50 backdrop-blur-xl border border-white/12 rounded-2xl px-4 py-2.5 min-w-[165px]">
+          <div className="flex justify-between items-center mb-1.5">
+            <span className="text-[9px] font-mono tracking-widest text-white/30 uppercase">
+              PWM
+            </span>
+            <span
+              className={cn(
+                "text-sm font-black font-mono tabular-nums",
+                trpPwm >= 1800
+                  ? "text-rose-400"
+                  : trpPwm >= 1500
+                    ? "text-amber-300"
                     : "text-emerald-400",
-                )}
-              >
-                {torpidoTargetPwm}
-              </span>
-            </div>
-
-            {/* Progress bar */}
-            <div className="w-full h-1.5 bg-gray-700 rounded-full overflow-hidden">
-              <div
-                className={cn(
-                  "h-full rounded-full transition-all duration-150",
-                  torpidoTargetPwm >= 1800
-                    ? "bg-rose-500"
-                    : torpidoTargetPwm >= 1500
-                    ? "bg-amber-400"
+              )}
+            >
+              {trpPwm}
+            </span>
+          </div>
+          <div className="w-full h-[3px] bg-white/8 rounded-full overflow-hidden">
+            <div
+              className={cn(
+                "h-full rounded-full transition-all duration-100",
+                trpPwm >= 1800
+                  ? "bg-rose-400"
+                  : trpPwm >= 1500
+                    ? "bg-amber-300"
                     : "bg-emerald-400",
-                )}
-                style={{ width: `${pwmPercent}%` }}
-              />
-            </div>
-
-            <div className="flex justify-between w-full text-[9px] text-gray-600 font-mono">
-              <span>{TORPIDO_PWM_MIN}</span>
-              <span>{TORPIDO_PWM_MAX}</span>
-            </div>
+              )}
+              style={{ width: `${tpct}%` }}
+            />
           </div>
-        </div>
-
-        <div className="absolute left-5 bottom-5 select-none">
-          <div className="flex gap-1 mb-1">
-            {KEY_LABELS.filter((k) => k.row === 1).map(({ key, label, action }) => (
-              <KeyCap key={key} label={label} action={action} active={activeKeys.has(key)} />
-            ))}
-          </div>
-          <div className="flex gap-1 mb-1">
-            {KEY_LABELS.filter((k) => k.row === 2).map(({ key, label, action }) => (
-              <KeyCap key={key} label={label} action={action} active={activeKeys.has(key)} />
-            ))}
-          </div>
-          <div className="flex gap-1">
-            {KEY_LABELS.filter((k) => k.row === 3).map(({ key, label, action }) => (
-              <KeyCap key={key} label={label} action={action} active={activeKeys.has(key)} />
-            ))}
+          <div className="flex justify-between mt-1">
+            <span className="text-[7px] text-white/15 font-mono">{TMIN}</span>
+            <span className="text-[7px] text-white/15 font-mono">{TMAX}</span>
           </div>
         </div>
       </div>
 
-      <div className="border border-gray-300 rounded-2xl col-span-2 row-span-3 flex flex-col items-center justify-center">
-        <Image src="/image.png" width={800} height={1200} alt="" className="w-full h-[85%] object-cover" />
-      </div>
+      <AnimatePresence>
+        {gpHint && (
+          <motion.div
+            initial={{ opacity: 0, x: 16 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 16 }}
+            transition={{ duration: 0.15 }}
+            className="absolute top-5 right-5 bg-white/95 backdrop-blur-xl rounded-2xl px-4 py-2.5
+              flex items-center gap-2 shadow-2xl shadow-black/30"
+          >
+            <Gamepad2 className="size-4 text-gray-400 flex-shrink-0" />
+            <span className="text-gray-800 text-sm font-mono font-semibold">
+              {gpHint}
+            </span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
-      {/* ── Alt panel ────────────────────────────────────────────────────────── */}
       <div
-        onClick={() => console.log("Gamepads:", navigator.getGamepads())}
-        className="border border-gray-300 rounded-2xl col-span-4 row-span-2 grid grid-cols-3 divide-x
-        divide-gray-300 *:px-12 *:flex *:flex-col *:items-center *:justify-center *:transition-colors
-        *:hover:bg-gray-300/30 *:cursor-pointer *:text-gray-400 *:hover:text-gray-700"
+        className="absolute bottom-0 left-0 right-0 h-24 bg-white rounded-t-3xl backdrop-blur-2xl border-t border-gray-300
+        flex justify-center items-center"
       >
-        <div className="rounded-l-2xl">
-          <Monitor className="size-20 mb-3" />
-          <p className="text-2xl">Seri Monitör</p>
-        </div>
-        <div>
-          <Logs className="size-20 mb-3" />
-          <p className="text-2xl">Konsol Kayıtları</p>
-        </div>
-        <div className="rounded-r-2xl">
-          <LaptopMinimal className="size-20 mb-3" />
-          <p className="text-2xl">RPi Bağlantısı</p>
+
+        <div className="flex mx-auto w-min items-center gap-2">
+          <div className="w-240 h-3 rounded-full overflow-hidden">
+            <motion.div
+              className="h-3 bg-red-500 rounded-full absolute left-1/2 -translate-x-1/2"
+              animate={{ width: `${spd * 4.8}px` }}
+              transition={{ duration: 0.15 }}
+            />
+          </div>
         </div>
       </div>
-
-
-      <div className="border border-gray-300 rounded-2xl col-span-2 row-span-2">
-        <div className="relative z-10 h-full flex flex-col">
-          <p className="text-4xl text-right">Bağlantılar</p>
-          <p className="text-lg text-gray-500 text-right">
-            {ips?.join(",")} adreslerinden bağlanın
-          </p>
-          <p className="mt-auto ml-auto flex items-center gap-2">
-            <span className="bg-success-500 w-2 h-2 rounded-full" />
-            {count} kullanıcı bağlandı
-          </p>
-        </div>
-        <Globe className="size-80 text-gray-100 absolute -left-[15%] -bottom-[30%] z-0" />
-      </div>
-    </main>
-  );
-}
-
-
-function KeyCap({
-  label,
-  action,
-  active,
-}: {
-  label: string;
-  action: string;
-  active: boolean;
-}) {
-  return (
-    <div
-      className={cn(
-        "w-14 h-14 rounded-lg border-2 flex flex-col items-center justify-center gap-0.5",
-        "text-xs font-mono transition-all duration-75 select-none",
-        active
-          ? "bg-cyan-500/90 border-cyan-300 text-white shadow-lg shadow-cyan-500/40 scale-95"
-          : "bg-black/50 border-gray-600 text-gray-400 backdrop-blur-sm",
-      )}
-    >
-      <span className={cn("text-base font-bold leading-none", active && "text-white")}>
-        {label}
-      </span>
-      <span className={cn("text-[9px] leading-none", active ? "text-cyan-100" : "text-gray-500")}>
-        {action}
-      </span>
     </div>
   );
 }
 
-export default dynamic(() => Promise.resolve(Client), {
-  ssr: false,
-});
+export default dynamic(() => Promise.resolve(Client), { ssr: false });
